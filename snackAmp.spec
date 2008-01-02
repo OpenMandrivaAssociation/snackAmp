@@ -13,6 +13,7 @@ Source: 	%{name}-%{version}.tar.bz2
 Source1:	%{name}48.png
 Source2:	%{name}32.png
 Source3:	%{name}16.png
+BuildRoot: 	%{_tmppath}/%{name}-buildroot
 Requires:	tcl tk libsnack metakit-tcl
 
 %description

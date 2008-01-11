@@ -66,12 +66,6 @@ mkdir -p $RPM_BUILD_ROOT/%_miconsdir
 cat %SOURCE3 > $RPM_BUILD_ROOT/%_miconsdir/%name.png
 
 # Menu
-mkdir -p %buildroot/%{_menudir}
-cat > %buildroot/%{_menudir}/%{name} <<EOF
-?package(%{name}): command="%{_bindir}/%{name}" needs="X11" \
-icon="snackAmp.png" section="Multimedia/Sound" \
-title="SnackAmp" longtitle="Music player" xdg="true"
-EOF
 
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/applications
 cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}.desktop << EOF
@@ -98,7 +92,6 @@ rm -rf %buildroot/
 %defattr(-,root,root)
 %_bindir/%name
 %_libdir/%name
-%_menudir/%name
 %{_datadir}/applications/mandriva-%{name}.desktop
 %_liconsdir/%name.png
 %_iconsdir/%name.png

@@ -1,11 +1,7 @@
-%define name	snackAmp
-%define version	3.1.2
-%define release %mkrel 2
-
 Summary:	Powerful, versatile music player
-Name:		%{name}
-Version: 	%{version}
-Release: 	%{release}
+Name:		snackAmp
+Version: 	3.1.2
+Release: 	%mkrel 3
 License: 	GPL
 Group: 		Sound
 URL: 		http://snackamp.sourceforge.net
@@ -13,8 +9,8 @@ Source: 	%{name}-%{version}.tar.bz2
 Source1:	%{name}48.png
 Source2:	%{name}32.png
 Source3:	%{name}16.png
-BuildRoot: 	%{_tmppath}/%{name}-buildroot
-Requires:	tcl tk libsnack metakit-tcl
+Requires:	tcl tk snack metakit-tcl
+BuildRoot: 	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 SnackAmp is a multi-platform music player with normal music player abilities,

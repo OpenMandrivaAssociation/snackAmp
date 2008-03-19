@@ -1,7 +1,7 @@
 Summary:	Powerful, versatile music player
 Name:		snackAmp
 Version: 	3.1.2
-Release: 	%mkrel 3
+Release: 	%mkrel 4
 License: 	GPL
 Group: 		Sound
 URL: 		http://snackamp.sourceforge.net

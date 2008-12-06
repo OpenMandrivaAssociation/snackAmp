@@ -23,7 +23,9 @@ Requires:	tk
 Requires:	snack
 Requires:	metakit-tcl
 Requires:	tcl-tcllib
+# for macros
 BuildRequires:	tcl-devel
+BuildRequires:	dos2unix
 BuildArch:	noarch
 BuildRoot: 	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 

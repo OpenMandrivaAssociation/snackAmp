@@ -71,9 +71,9 @@ chmod 644 %{buildroot}/%{tcl_sitelib}/%{name}/lib/*.tcl
 
 #icons
 mkdir -p %{buildroot}/%{_iconsdir}/hicolor/{16x16,32x32,48x48}/apps
-install -m 0644 %{SOURCE1} > %{buildroot}/%{_iconsdir}/hicolor/48x48/apps/%{name}.png
-install -m 0644 %{SOURCE2} > %{buildroot}/%{_iconsdir}/hicolor/32x32/apps/%{name}.png
-install -m 0644 %{SOURCE3} > %{buildroot}/%{_iconsdir}/hicolor/16x16/apps/%{name}.png
+install -m 0644 %{SOURCE1} %{buildroot}/%{_iconsdir}/hicolor/48x48/apps/%{name}.png
+install -m 0644 %{SOURCE2} %{buildroot}/%{_iconsdir}/hicolor/32x32/apps/%{name}.png
+install -m 0644 %{SOURCE3} %{buildroot}/%{_iconsdir}/hicolor/16x16/apps/%{name}.png
 
 # Menu
 mkdir -p %{buildroot}%{_datadir}/applications

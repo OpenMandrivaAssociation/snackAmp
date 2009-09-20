@@ -1,4 +1,4 @@
-%define rel	1
+%define rel	2
 %define beta	20070930
 %if %beta
 %define release		%mkrel 0.%{beta}.%{rel}

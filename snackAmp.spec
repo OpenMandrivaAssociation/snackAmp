@@ -51,7 +51,7 @@ Sjölander.
 %setup -q -n %{name}.vfs
 %patch0 -p0 -b .tcl86time
 rm -fr `find -name CVS*`
-find -name \*.tcl | xargs dos2unix -U
+find -name \*.tcl | xargs dos2unix
 
 %install
 rm -fr %{buildroot}

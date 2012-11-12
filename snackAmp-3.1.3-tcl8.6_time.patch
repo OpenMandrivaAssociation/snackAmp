@@ -1,0 +1,22 @@
+--- lib/gpUtils.tcl	2007-09-30 18:35:28.000000000 -0700
++++ lib/gpUtils.tcl.new	2008-10-17 19:54:39.000000000 -0700
+@@ -1250,16 +1250,9 @@
+ #------------------------------------------------------------------------------
+ # Fast routines for formatting time
+ #------------------------------------------------------------------------------
+-if {$::tcl_version<=8.4} {
+-   proc timeFormat {value} {
+-      return [clock format $value -format $::snackAmpSettings(timeString)]
+-   }
+-} else {
+-  # Version 8.5 has SLOW clock format, this is faster
+-   proc timeFormat {value} {
+-      return [format "%04d-%02d-%02d %02d:%02d:%02d" {expand}[::tcl::clock::Localtime $value]]
+-   }
+-}
++proc timeFormat {value} {
++  return [clock format $value -format $::snackAmpSettings(timeString)]
++}
+ #------------------------------------------------------------------------------
+ # Function   : timestamp
+ # Description: Return a timestamp for NOW

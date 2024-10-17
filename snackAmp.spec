@@ -12,7 +12,7 @@ Version: 	3.1.3
 Release: 	%{release}
 License: 	GPLv2+
 Group: 		Sound
-URL: 		http://snackamp.sourceforge.net
+URL: 		https://snackamp.sourceforge.net
 Source0: 	http://snackamp.sourceforge.net/releases/%{name}-%{version}.tar.gz
 Source1:	%{name}48.png
 Source2:	%{name}32.png

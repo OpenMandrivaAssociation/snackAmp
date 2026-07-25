@@ -1,9 +1,9 @@
 %define rel	2
 %define beta	20070930
 %if %beta
-%define release		%mkrel 0.%{beta}.%{rel}
+%define release 0.%{beta}.%{rel}.1
 %else
-%define release		%mkrel %{rel}
+%define release %{rel}.1
 %endif
 
 Summary:	Powerful, versatile music player
